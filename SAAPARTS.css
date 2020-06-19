@@ -1,0 +1,312 @@
+body, html {
+    height: 100%;
+}
+.bg {
+    background-image:  url("logo4.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 2px solid;
+    border-color: purple;
+    filter: brightness(75%);
+   
+}
+
+
+
+
+/* NAVBAR HOVER EFFECT */
+
+body {
+    font:14px 'open sans', sans-serif;
+
+}
+
+h1 {
+    font-size: 64px;
+    color: purple;
+    text-align: center;
+    word-spacing: 30px;
+    font-style:oblique;
+    font-weight:bold;
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(173, 173, 10);
+    text-align: center;
+    word-spacing: 10px;
+}
+
+h3{
+    font-size: 32px;
+    color: rgb(173, 173, 10);
+    text-align: center;
+    word-spacing: 10px; 
+}
+
+h4{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+}
+h5{
+    font-size: 18px;
+    font-weight: 100;  
+}
+
+p{
+    font-size: 32px;
+    color: black;
+    text-align: center;
+    font-weight:bold;
+     
+}
+
+b {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-wrapper{
+    width:100%;
+    padding:50px 0 70px;
+    
+}
+
+nav {
+    float:left;
+    overflow:visible;
+}
+
+#myNav {
+    float:left;
+    overflow:visible;
+}
+nav ul {
+    list-style-type: none;
+    left: 50%;
+    position: auto;
+    margin:0;
+    padding:0;
+}
+
+nav li {
+    display:inline-block;
+    margin-left: 70px;
+    padding-top:23px;
+    position: relative;
+}
+
+nav a {
+    text-decoration: none;
+    color: purple;
+    text-transform: uppercase;
+    font-size:20px;
+    
+}
+
+nav a:hover {
+    color:rgb(173, 173, 10);
+}
+
+nav a:before {
+    content: '';
+    display: block;
+    height: 5px;
+    background-color: rgb(173, 173, 10);
+    position:absolute;
+    top:0;
+    width:0%;
+    transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+/* for the side by side images */
+#imgStyle{
+    width: 400px;
+    height: 400px;
+    margin: 50px;
+    border: purple 2px solid;
+    border-radius: 10px;
+}
+
+.column{
+    float: left;
+    width: 40%;
+    padding: 65px;
+    display: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* STYLING FOR TAB GALLERY */
+.column1 {
+    float: left;
+    width: 145px;
+    height: 145px;
+    padding: 10px;
+}
+/* style the images inside the grid */
+.column1 img {
+    opacity: 0.8;
+    cursor: pointer;
+    height: 20vh;
+    width:100%;
+    border: purple 2px solid;
+    border-radius: 10px;
+}
+.column1 img:hover{
+    opacity: 1;
+}
+/* clear floats after the columns */
+.row1:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+/* the expanding image container (positioning is needed to position the close button and the text) */
+.container1 {
+    position:relative;
+    display: none;
+    border: purple 2px solid;
+    border-radius: 10px;
+}
+/* expanding image text */
+#imgText {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 30px;
+}
+/* closable button inside the image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size:35px;
+    cursor: pointer;
+}
+
+
+/* styling for the contact form */
+.bgImg{
+    background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url("engine.jpg");
+    border: purple 2px solid;
+    border-radius: 10px;
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.container2{
+    margin-left: 37%;
+    margin-top: 1%;
+    
+    position:absolute;
+    
+    max-width: 300px;
+    
+    
+    
+}
+
+/* full-width input fields */
+input[type=text] {
+    width:100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: white 1px solid;
+    border-radius: 10px;
+    background: white;
+}
+
+input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* set a style for the submit button */
+.btn {
+    background-color: purple;
+    color: white;
+    padding: 16px ;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    margin-left: 16px;
+    border: purple 1px solid;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
+
+.footer {
+    height: 200px;
+    background-color:purple;
+}
+
+
+/* style all font icons */
+
+.fa {
+    padding: 20px;
+    font-size:30px;
+    width:35px;
+    text-align:center;
+    text-decoration: none;
+    
+}
+
+.fa:hover {
+    opacity:0.7;
+    
+}
+
+.fa-facebook {
+    
+    color: white;
+}
+
+.fa-twitter {
+    
+    color:white;
+}
+
+.fa-reddit {
+    
+    color: white;
+}
+
+.fa-whatsapp {
+
+    color: white;
+}
+.fa-instagram {
+    
+    color: white;
+}
+
+.smIcons a {
+    margin: 20px;
+    float: center;
+    position: relative;
+}

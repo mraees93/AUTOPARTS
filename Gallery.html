@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+
+<!-- link for the social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- link for navbar -->
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="SAAPARTS.css">
+<link rel = "icon" href = "favicon.ico">
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <h1>S.A AUTOPARTS</h1>
+        <h2>GALLERY</h2>
+    </div>
+    
+    <br><br>
+    
+    <div class="content">
+    <div class="container">   
+    <div class="nav-wrapper">
+        <nav id="myNav" class="effect-3" >
+            <ul>
+                <li><a href="SAAPARTS.html">HOME</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div> 
+    </div> 
+    </div> 
+
+
+    <br><br><br><br>
+
+
+
+    <!-- the grid -->
+    <div><h5>Click on any image to expand it:</h5></div>
+  <div class= "row1"> 
+    <div class="column1">
+        <h4>Carburators</h4>
+        <img src = "carbs/carbs.jpg" alt= "Carburetors"  onclick="myGallery(this);">
+    </div>
+    <div class="column1">
+        
+        <img src= "carbs/carbs2.jpg" alt = "More carburetors"  onclick = "myGallery(this);">
+      </div>
+      <div class="column1">
+        <h4>Crank shafts</h4>
+        <img src = "crankShaft/CS.jpg" alt= "Crank shafts"  onclick="myGallery(this);">
+    </div>
+    <div class="column1">
+        
+        <img src = "crankShaft/CS1.jpg" alt= "More crank shafts"  onclick="myGallery(this);">
+    </div> 
+    <div class="column1">
+        <h4>Engines(2018)</h4>
+        <img src = "engines2018/4Y3.jpg" alt= "Engines (2018)"  onclick="myGallery(this);">
+    </div> 
+    <div class="column1">
+        
+        <img src = "engines2018/4Y4.jpg" alt= "Engines (2018)"  onclick="myGallery(this);">
+    </div> 
+    <div class="column1">
+        <h4>Engines(2019)</h4>
+        <img src = "engines2019/eng1.jpg" alt= "Engines (2019)"  onclick="myGallery(this);">
+    </div> 
+    <div class="column1">
+        
+        <img src = "engines2019/eng2.jpg" alt= "Engines (2019)"  onclick="myGallery(this);">
+    </div> 
+      </div>
+
+      <!-- the expanding image container -->
+      <div class="container1">
+          <!-- close the image -->
+          <span onclick="this.parentElement.style.display='none'" class = "closebtn">&times;</span>
+
+          <!-- expanded image -->
+          <img id="expandedImg" style= "width:100%">
+
+          <!-- image text -->
+          <div id="imgText"></div>
+      </div>
+
+<br><br><br><br><br>
+
+
+      <div class = "footer">
+        <footer>
+            <h4>Terms and conditions apply.</h4>
+        
+            <div class = "smIcons">
+                <a href = "#" class = "fa fa-facebook"></a>
+                <a href = "#" class = "fa fa-twitter"></a>
+                <a href = "#" class = "fa fa-reddit"></a>
+                <a href = "#" class = "fa fa-whatsapp"></a>
+                <a href = "#" class = "fa fa-instagram"></a>
+            </div>
+        <h4>&copy; Copyright 2020</h4>
+        </footer>
+        </div>
+
+
+
+
+
+
+
+
+      <script>
+          function myGallery(imgs) {
+            //   get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // get the image text
+            var imgText = document.getElementById("imgText");
+            // use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+          }
+
+
+      </script>
+
+</body>
+</html>
